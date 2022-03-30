@@ -17,10 +17,10 @@ def load():
     args=parser.parse_args() #tempat value argumen 
 
     if cekfolder(args.x): #cek ke validan folder 
-        df_user=pd.read_csv(f"{args.x}/user.csv") #jika true load data yang ada di folder 
-        df_game=pd.read_csv(f"{args.x}/game.csv") #File yang di folder dipastikan ada sesuai dengan spesifikasi 
-        df_riwayat=pd.read_csv(f"{args.x}/riwayat.csv")
-        df_kepemilikan=pd.read_csv(f"{args.x}/kepemilikan.csv")
+        df_user=pd.read_csv(f"{args.x}/user.csv",sep=";") #jika true load data yang ada di folder 
+        df_game=pd.read_csv(f"{args.x}/game.csv",sep=";") #File yang di folder dipastikan ada sesuai dengan spesifikasi 
+        df_riwayat=pd.read_csv(f"{args.x}/riwayat.csv",sep=";")
+        df_kepemilikan=pd.read_csv(f"{args.x}/kepemilikan.csv",sep=";")
         print("Selamat datang di antarmuka “Binomo”") 
     else:
         print(f"Folder “{args.x}” tidak ditemukan.")
