@@ -2,8 +2,8 @@ def cekusername(a,d):
     stat=True
     if not(a.isalnum()):
         stat=False
-    for i in d['username']:
-        if i==a :
+    for i in d:
+        if i[1]==a :
             stat=False
             break
     return stat
@@ -14,12 +14,7 @@ def register(dict_user):
     password=input("Masukan password: ")
     stat=True
     if cekusername(username,dict_user):#jika username sudah unik
-        dict_user['id'].append(dict_user['id'][-1]+1)
-        dict_user['nama'].append(nama)
-        dict_user['username'].append(username)
-        dict_user['password'].append(password)
-        dict_user['role'].append("user")
-        dict_user['saldo'].append(0)
+        dict_user+=[(dict_user[-1][0])+1,nama,username,password,'user','0']
         print(f"Username {username} telah berhasil register ke dalam “Binomo”.")
     else:
         stat=False

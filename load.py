@@ -6,6 +6,21 @@ import pandas as pd
 def cekfolder(x):
     isdir=os.path.exists(x)
     return isdir
+#fungsi seperasi ;
+def septoarray(df):
+    arr_origin=[]
+    for c in df:
+        arr=[]
+        char=''
+        for i in c:
+            if i!=';' and i!='\n':
+                char=char+i
+            else:
+                arr+=[char]
+                char=''
+        arr_origin+=[arr]
+    return arr_origin
+    
 def load():
     print("loading...") #loading...
     parser = argparse.ArgumentParser(usage="python program_binomo.py <nama_folder>") 
@@ -17,17 +32,13 @@ def load():
     args=parser.parse_args() #tempat value argumen 
 
     if cekfolder(args.x): #cek ke validan folder 
-        df_user=pd.read_csv(f"{args.x}/user.csv",sep=";") #jika true load data yang ada di folder 
-        df_game=pd.read_csv(f"{args.x}/game.csv",sep=";") #File yang di folder dipastikan ada sesuai dengan spesifikasi 
-        df_riwayat=pd.read_csv(f"{args.x}/riwayat.csv",sep=";")
-        df_kepemilikan=pd.read_csv(f"{args.x}/kepemilikan.csv",sep=";")
+        df_user=open(f"{args.x}/user.csv") #jika true load data yang ada di folder 
+        df_game=open(f"{args.x}/game.csv") #File yang di folder dipastikan ada sesuai dengan spesifikasi 
+        df_riwayat=open(f"{args.x}/riwayat.csv")
+        df_kepemilikan=open(f"{args.x}/kepemilikan.csv")
         print("Selamat datang di antarmuka “Binomo”") 
     else:
         print(f"Folder “{args.x}” tidak ditemukan.")
-    return df_user,df_game,df_kepemilikan,df_riwayat
+    return septoarray(df_user.readlines()),septoarray(df_game.readlines()),septoarray(df_kepemilikan.readlines()),septoarray(df_riwayat.readlines())
 
-
-
-
-
-
+print(load())

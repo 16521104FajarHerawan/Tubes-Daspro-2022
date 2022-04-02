@@ -2,10 +2,10 @@ def login(dict):
     username=input("Masukan username: ")
     password=input("Masukan password: ")
     status=False
-    for i,j,k in zip(dict['username'],dict['password'],dict['role']):
-        if i==username and j==password:
+    for i in dict[1:]:
+        if i[1]==username and i[3]==password:
             print(f"Halo {username}! Selamat datang di “Binomo”.")
-            kategori=k
+            kategori=i[4]
             status=True
             break
     if status==False:
