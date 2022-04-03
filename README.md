@@ -2,9 +2,9 @@
 > ### Cara Menggunakan
 > 1. Pastikan git terinstall di device .
 > 2. Fork repository ini agar menjadi milik kalian.
-> 3. Buka repository Anda dan copy link (biasanya tersedia di repo dengan tombol berwarna hijau bertuliskan code)
-> 4. Buka terminal atau klik kanan git bash ,setelah itu ketik git clone link
-> 5. Run file main.py untuk keseluruhan program 
+> 3. Buka repository dan copy link (biasanya tersedia di repo dengan tombol berwarna hijau bertuliskan code).
+> 4. Buka terminal atau klik kanan git bash ,setelah itu ketik git clone link.
+> 5. Run file main.py untuk keseluruhan program .
 
 > ### Log Activity 
 > 1. 3/29/2022 Membuat File Register,Login,dan Load . Untuk file login belum selesai dan ada beberapa pertanyaan untuk file register apakah username lgsg disimpan di csv atau database sementara
