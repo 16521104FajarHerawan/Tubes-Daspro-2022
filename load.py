@@ -13,12 +13,15 @@ def septoarray(df):
         arr=[]
         char=''
         for i in c:
-            if i!=';' and i!='\n':
+            if i!=';' and i!='' and i!='\n':
                 char=char+i
-            else:
+            else :
                 arr+=[char]
                 char=''
-        arr_origin+=[arr]
+        if char!='':
+            arr_origin+=[arr+[char]]
+        else:
+            arr_origin+=[arr]
     return arr_origin
     
 def load():
