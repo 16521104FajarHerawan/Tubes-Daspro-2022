@@ -40,5 +40,3 @@ def load():
     else:
         print(f"Folder “{args.x}” tidak ditemukan.")
     return septoarray(df_user.readlines()),septoarray(df_game.readlines()),septoarray(df_kepemilikan.readlines()),septoarray(df_riwayat.readlines())
-
-print(load())

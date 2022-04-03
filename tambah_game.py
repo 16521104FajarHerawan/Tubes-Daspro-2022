@@ -15,5 +15,5 @@ def tambahgame(list):
                 print("\nMohon masukkan semua informasi mengenai game agar dapat disimpan BNMO.")
             else:
                 print(f"\nSelamat! Berhasil menambahkan game {nama}.")
-    list+=[buatid(list[-1]),nama,kategori,tahun_rilis,harga,stok_awal]
+    list+=[[buatid(list[-1]),nama,kategori,tahun_rilis,harga,stok_awal]]
     return list
