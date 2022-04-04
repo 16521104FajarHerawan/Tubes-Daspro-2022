@@ -12,4 +12,5 @@
 > 3. 4/1/2022 Membuat File ubah_game yang belum selesai.file tambah_game sudah selesai 
 > 4. 4/2/2022 Membuat perubahan agar mengikuti aturan seperti tidak boleh menggunakan pandas dan fungsi fungsi tertentu yang hanya boleh digunakan untuk lebih lanjut lihat Spesifikasi https://docs.google.com/document/d/1mqODeKIMLjvRmoUb_XQPK7pOifJb-rma83bMuqE9C1s/edit#heading=h.4pu7w2tj1ey
 > 5. 4/3/2022 Membuat File ubah_stok dan list_game_toko dan sedikit debug di file load sementara file ubah_game ditunda karena spesifikasi yang kurang jelas.
+> 6. 4/4/2022 Membuat File ubah_game.py 
  
