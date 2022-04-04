@@ -1,7 +1,6 @@
 import os
 import sys
 import argparse
-import pandas as pd
 #fungsi untuk cek folder ada atau tidak
 def cekfolder(x):
     isdir=os.path.exists(x)
