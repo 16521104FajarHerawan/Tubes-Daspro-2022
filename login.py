@@ -2,6 +2,7 @@ def login(list):
     username=input("Masukan username: ")
     password=input("Masukan password: ")
     status=False
+    kategori=''
     for i in list[1:]:
         if i[1]==username and i[3]==password:
             print(f"Halo {username}! Selamat datang di “Binomo”.")

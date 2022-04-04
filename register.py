@@ -14,7 +14,7 @@ def register(df_user):
     password=input("Masukan password: ")
     stat=True
     if cekusername(username,df_user):#jika username sudah unik
-        df_user+=[[str(int((df_user[-1][0]))+1),nama,username,password,'user','0']]
+        df_user+=[[str(int((df_user[-1][0]))+1),username,nama,password,'user','0']]
         print(f"Username {username} telah berhasil register ke dalam “Binomo”.")
     else:
         stat=False
