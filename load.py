@@ -12,7 +12,7 @@ def septoarray(df):
         arr=[]
         char=''
         for i in c:
-            if i!=';' and i!='' and i!='\n' and i!='':
+            if i!=';' and i!='' and i!='\n':
                 char=char+i
             else :
                 arr+=[char]
@@ -42,4 +42,3 @@ def load():
     else:
         print(f"Folder “{args.x}” tidak ditemukan.")
     return septoarray(df_user.readlines()),septoarray(df_game.readlines()),septoarray(df_kepemilikan.readlines()),septoarray(df_riwayat.readlines())
-#print(load())

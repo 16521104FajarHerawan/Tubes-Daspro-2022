@@ -9,6 +9,7 @@ from save import *
 #Load Database
 df_user,df_game,df_kepemilikan,df_riwayat=load()
 stat='user'
+
 stat_game=True
 #Login Menu 
 # Harus Register atau Login agar dapat masuk ke dalam Program
@@ -46,7 +47,7 @@ while stat_game:
         elif status.upper()=='N':
             stat_game=False
 
-    
+   
 
 
     
