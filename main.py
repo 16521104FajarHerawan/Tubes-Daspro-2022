@@ -1,5 +1,6 @@
-import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup
+import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help
 import search_game_at_store as search
+
 #Load Database
 df_user,df_game,df_kepemilikan,df_riwayat=load.load()
 stat_game=True
@@ -9,7 +10,10 @@ stat_init=False
 while stat_init==False:
     input_user=input()
     if input_user=="login":
-        stat_init,stat,user=login.login(df_user)
+        stat_init,stat,user_id=login.login(df_user)
+    elif input_user=='help':
+        help.help('')
+
 #Masuk ke game
 while stat_game: 
     command=input()#Masukan Perintah 
@@ -29,10 +33,14 @@ while stat_game:
         search.search_game_at_store(df_game)
     elif stat == 'admin' and command == 'topup':
         df_user=topup.topup(df_user)
+    elif stat =='user' and command == 'list_game':
+        list_game.list_game(df_kepemilikan,df_game,user_id)
     elif command=='save':
         save.save(df_user,df_game,df_kepemilikan,df_riwayat)
     elif command=='searchmygame':
-        search_my_game.search_my_game(df_game,df_kepemilikan,user)
+        search_my_game.search_my_game(df_game,df_kepemilikan,user_id)
+    elif command=='help':
+        help.help(stat)
     elif command=='exit':
         print("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n)")
         status=input()
