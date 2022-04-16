@@ -22,7 +22,22 @@ def septoarray(df):
         else:
             arr_origin+=[arr]
     return arr_origin
-    
+def septoarraycoma(df):
+    char=''
+    arr=[]
+    for i in df:
+        if i!=',' and i!='' and i!='\n':
+            char=char+i
+        else :
+            arr+=[char]
+            char=''
+    if char!='' and arr!=['']:
+        arr+=[char]
+    return arr
+def kepemilikanarray(df):
+    for i in df[1:]:
+        i[1]=septoarraycoma(i[1])
+    return df
 def load():
     print("loading...") #loading...
     parser = argparse.ArgumentParser(usage="python program_binomo.py <nama_folder>") 

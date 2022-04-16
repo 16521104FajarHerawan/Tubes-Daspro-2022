@@ -1,6 +1,3 @@
 id;username;nama;password;role;saldo
-0;fajar;fajar;fajar;admin;0
-1;fajar;fajar;haha;user;0
-2;fajar;haha;batman;user;0
-3;haha;fajar;batman;user;0
-4;hihi;haha;batman;user;0
+1;fajar;fajar;hibip;admin;10000
+2;btm;fajar;riri;user;0

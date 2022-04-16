@@ -4,6 +4,7 @@ def panjang(df):
     for i in df:
         len+=1
     return len
+
 def arraytostr(df):
     new_arr=[]
     for i in df:
@@ -11,13 +12,28 @@ def arraytostr(df):
         index=1
         len=panjang(i)
         for j in i:
-            str=str+j
+            if type(j)==type('s'):
+                str=str+j
+            else:
+                str=str+arraytostrkep(j)
             if index!=len:
                 str=str+";"
             index=index+1
         
         new_arr+=[str]
     return new_arr
+def arraytostrkep(list):
+    str=''
+    length=panjang(list)
+    index=1
+    for i in list:
+        if index!=length:
+            str+=(i+',')
+        else :
+            str+=i
+        index+=1
+    return str
+
 def save(df_user,df_game,df_kepemilikan,df_riwayat):
     stat=True
     while stat :
