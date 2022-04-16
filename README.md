@@ -13,4 +13,25 @@
 > 4. 4/2/2022 Membuat perubahan agar mengikuti aturan seperti tidak boleh menggunakan pandas dan fungsi fungsi tertentu yang hanya boleh digunakan untuk lebih lanjut lihat Spesifikasi https://docs.google.com/document/d/1mqODeKIMLjvRmoUb_XQPK7pOifJb-rma83bMuqE9C1s/edit#heading=h.4pu7w2tj1ey
 > 5. 4/3/2022 Membuat File ubah_stok dan list_game_toko dan sedikit debug di file load sementara file ubah_game ditunda karena spesifikasi yang kurang jelas.
 > 6. 4/4/2022 Membuat File ubah_game.py dan save.py 
- 
+> 7. 4/14/2022 Edit register.py dan list_game_toko.py    
+
+> ### Daftar Fungsi
+> - [x] Register
+> - [x] Login
+> - [x] Menambah Game ke Toko Game
+> - [x] Mengubah Game pada Toko Game
+> - [x] Mengubah Stok pada Toko Game
+> - [x] Listing Game di Toko Berdasarkan ID, Tahun Rilis dan Harga
+> - [ ] Membeli Game
+> - [ ] Melihat Game yang dimiliki
+> - [ ] Mencari Game yang dimiliki dari ID dan tahun rilis
+> - [ ] Mencari Game di Toko dari ID, Nama Game, Harga, Kategori dan Tahun Rilis
+> - [ ] Top Up Saldo
+> - [ ] Melihat Riwayat Pembelian
+> - [ ] Help
+> - [x] Load
+> - [x] Save
+> - [x] Exit
+> - [ ] Cipher 
+> - [ ] Magic Conch Shell
+> - [ ] Game Tic-Tac-Toe
