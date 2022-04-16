@@ -65,6 +65,7 @@ def tictactoe():
                 if cekinputvalid(x,y) and kotakterisi(papan,x,y):
                     papan[y-1][x-1]='X'
                     clear()
+                    print('Legenda:\n# Kosong\nX Pemain 1\nO Pemain 2')
                     print('----------\nStatus Papan')
                     printpapan(papan)
                     valid=False
@@ -76,7 +77,7 @@ def tictactoe():
                     print("Pemain 'x' menang ")
                     stat=False
                     valid=False
-                order+=1
+            order+=1
         elif order%2 ==0:
             valid=True
             while valid:
@@ -86,6 +87,7 @@ def tictactoe():
                 if cekinputvalid(x,y) and kotakterisi(papan,x,y):
                     papan[y-1][x-1]='O'
                     clear()
+                    print('Legenda:\n# Kosong\nX Pemain 1\nO Pemain 2')
                     print('----------\nStatus Papan')
                     printpapan(papan)
                     valid=False
