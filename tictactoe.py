@@ -98,4 +98,3 @@ def tictactoe():
                     stat=False
                     valid=False
             order+=1
-tictactoe()
