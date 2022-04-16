@@ -35,4 +35,4 @@
 > - [x] Exit
 > - [x] Cipher 
 > - [ ] Magic Conch Shell
-> - [ ] Game Tic-Tac-Toe
+> - [x] Game Tic-Tac-Toe
