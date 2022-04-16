@@ -1,4 +1,4 @@
-import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help
+import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help,tictactoe
 import search_game_at_store as search
 
 #Load Database
@@ -41,6 +41,8 @@ while stat_game:
         search_my_game.search_my_game(df_game,df_kepemilikan,user_id)
     elif command=='help':
         help.help(stat)
+    elif command=='tictactoe':
+        tictactoe.tictactoe()
     elif command=='exit':
         print("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n)")
         status=input()
