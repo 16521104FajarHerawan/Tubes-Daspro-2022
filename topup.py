@@ -5,7 +5,6 @@ Spesifikasi:
     untuk mengurangi. Namun, apabila masukan saldo negatif, perlu dilakukan validasi.
     (akses: Admin)
 '''
-
 def panjang(df):
     len=0
     for i in df:

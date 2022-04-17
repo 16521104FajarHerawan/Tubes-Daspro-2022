@@ -76,3 +76,4 @@ def save(df_user,df_game,df_kepemilikan,df_riwayat):
             else:
                 file.write(x)
     print(f"Data telah disimpan pada folder {namafolder}!")
+

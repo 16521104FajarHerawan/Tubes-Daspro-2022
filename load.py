@@ -22,6 +22,7 @@ def septoarray(df):
         else:
             arr_origin+=[arr]
     return arr_origin
+#fungsi separasi koma
 def septoarraycoma(df):
     char=''
     arr=[]
@@ -56,4 +57,4 @@ def load():
         print("Selamat datang di antarmuka “Binomo”") 
     else:
         print(f"Folder “{args.x}” tidak ditemukan.")
-    return septoarray(df_user.readlines()),septoarray(df_game.readlines()),septoarray(df_kepemilikan.readlines()),septoarray(df_riwayat.readlines())
+    return septoarray(df_user.readlines()),septoarray(df_game.readlines()),kepemilikanarray(septoarray(df_kepemilikan.readlines())),septoarray(df_riwayat.readlines())

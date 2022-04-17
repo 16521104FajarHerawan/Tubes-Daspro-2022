@@ -1,4 +1,4 @@
-import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help,tictactoe,os
+import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help,tictactoe,os,buy_game,riwayat,kerangajaib
 import search_game_at_store as search
 clear=lambda:os.system('cls')
 def main():
@@ -19,11 +19,12 @@ def main():
 
     #Masuk ke game
     while stat_game: 
-        command=input('>>')#Masukan Perintah 
+        #Masukan Perintah
+        command=input('>>') 
         #Menambah Game ke Toko Game
         if stat=='admin' and command=="tambah_game":
             clear()
-            df_game=tambah_game.tambahgame(df_game)
+            df_game,df_kepemilikan=tambah_game.tambahgame(df_game,df_kepemilikan)
         elif stat=='admin' and command=='register': 
             clear()
             df_user=register.register(df_user)
@@ -55,9 +56,18 @@ def main():
         elif command=='help':
             clear()
             help.help(stat)
+        elif stat=='user' and command == 'beli_game':
+            clear()
+            df_game,df_kepemilikan,df_user,df_riwayat=buy_game.buy_game(df_user,df_game,df_kepemilikan,df_riwayat,user_id)
+        elif stat=='user' and command == 'riwayat':
+            clear()
+            riwayat.riwayat(df_riwayat,user_id)
         elif command=='tictactoe':
             clear()
             tictactoe.tictactoe()
+        elif command=='kerangajaib':
+            clear()
+            kerangajaib.kerangajaib()
         elif command=='exit':
             clear()
             print("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n)")
