@@ -56,7 +56,7 @@ def main():
         elif command=='help':
             clear()
             help.help(stat)
-        elif stat=='user' and command == 'beli_game':
+        elif stat=='user' and command == 'buy_game':
             clear()
             df_game,df_kepemilikan,df_user,df_riwayat=buy_game.buy_game(df_user,df_game,df_kepemilikan,df_riwayat,user_id)
         elif stat=='user' and command == 'riwayat':
