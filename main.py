@@ -50,7 +50,7 @@ def main():
         elif command=='save':
             clear()
             save.save(df_user,df_game,df_kepemilikan,df_riwayat)
-        elif command=='searchmygame':
+        elif command=='search_my_game':
             clear()
             search_my_game.search_my_game(df_game,df_kepemilikan,user_id)
         elif command=='help':
