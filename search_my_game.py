@@ -5,8 +5,20 @@ def length(array):
         res += 1
     return res
 def outputtabel(df):
+    maxnama=0
+    maxkategori=0
+    maxharga=0
     for i in df:
-        print("{:<8}|{:<30}|{:<15}|{:<11}|{:<15}|{:<8}".format(i[0],i[1],i[2],i[3],i[4],i[5]))
+        if length(i[1])>maxnama:
+            maxnama=length(i[1])
+    for i in df:
+        if length(i[2])>maxkategori:
+            maxkategori=length(i[2])
+    for i in df:
+        if length(i[4])>maxharga:
+            maxharga=length(i[4])
+    for i in df:
+        print("{:8}|{:^{maxnama}}|{:^{maxkategori}}|{:6}|{:^{maxharga}}|{:8}".format(i[0],i[1],i[2],i[3],i[4],i[5],maxnama=maxnama+1,maxkategori=maxkategori+1,maxharga=maxharga+1))
 def cekkepemilikan(df_kepemilikan,user_id):
     for i in df_kepemilikan:
         if i==user_id:
@@ -18,11 +30,9 @@ def search_my_game(df_game, df_kepemilikan, user_id):
     
     for i in range(1, length(df_kepemilikan)):
         if cekkepemilikan(df_kepemilikan[i][1],user_id):
-            print(True)
             for j in range(1, length(df_game)):
                 if df_game[j][0] == df_kepemilikan[i][0]:
                     games += [df_game[j]]
-    print(games)
     filtered_games = []
     for game in games:
         if (game_id == "" or game_id == game[0]) and (tahun == "" or tahun == game[3]):
@@ -34,5 +44,4 @@ def search_my_game(df_game, df_kepemilikan, user_id):
         print("Daftar game pada inventory yang memenuhi kriteria:")
         outputtabel(filtered_games)
 
-#search_my_game([['id', 'nama', 'kategori', 'tahun_rilis', 'harga', 'stok'], ['GAME001', 'BNMO - Play Along With Crypto', 'Adventure', '2022', '100000', '1']],[['Game_id', 'user_id'], ['GAME001', ['1', '2']]],'2')
     

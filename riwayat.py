@@ -5,8 +5,16 @@ def panjang(df):
     return len
 
 def outputtabel(df):
+    maxnama=0
+    maxharga=0
     for i in df:
-        print("{:<8}|{:<30}|{:<15}|{:<11}|{:<15}".format(i[0], i[1], i[2], i[3], i[4]))
+        if panjang(i[1])>maxnama:
+            maxnama=panjang(i[1])
+    for i in df:
+        if panjang(i[2])>maxharga:
+            maxharga=panjang(i[2])
+    for i in df:
+        print("{:8}|{:^{maxnama}}|{:^{maxharga}}|{:6}|{:6}".format(i[0],i[1],i[2],i[3],i[4],maxnama=maxnama+1,maxharga=maxharga+1))
 
 def riwayat(df_riwayat,user):
     rowRiwayat = panjang(df_riwayat)
