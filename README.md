@@ -14,7 +14,8 @@
 > 5. 4/3/2022 Membuat File ubah_stok dan list_game_toko dan sedikit debug di file load sementara file ubah_game ditunda karena spesifikasi yang kurang jelas.
 > 6. 4/4/2022 Membuat File ubah_game.py dan save.py 
 > 7. 4/14/2022 Edit register.py dan list_game_toko.py  
-> 8. 4/16/2022 Edit register.py,main,save,dan load .Selain itu, Menambahkan file search_game_at_store ,search_my_game,topup,chiper.Edit main.Menambahkan help dan list_game.Menambahkan tictactoe   
+> 8. 4/16/2022 Edit register.py,main,save,dan load .Selain itu, Menambahkan file search_game_at_store ,search_my_game,topup,chiper.Edit main.Menambahkan help dan list_game.Menambahkan tictactoe
+> 9. 4/18/2022 Edit main.py dan menambahkan riwayat,kerangajaib dan beli_game   
 
 > ### Daftar Fungsi
 > - [x] Register
@@ -23,16 +24,16 @@
 > - [x] Mengubah Game pada Toko Game
 > - [x] Mengubah Stok pada Toko Game
 > - [x] Listing Game di Toko Berdasarkan ID, Tahun Rilis dan Harga
-> - [ ] Membeli Game
+> - [x] Membeli Game
 > - [x] Melihat Game yang dimiliki
 > - [x] Mencari Game yang dimiliki dari ID dan tahun rilis
 > - [x] Mencari Game di Toko dari ID, Nama Game, Harga, Kategori dan Tahun Rilis
 > - [x] Top Up Saldo
-> - [ ] Melihat Riwayat Pembelian
+> - [x] Melihat Riwayat Pembelian
 > - [x] Help
 > - [x] Load
 > - [x] Save
 > - [x] Exit
 > - [x] Cipher 
-> - [ ] Magic Conch Shell
+> - [x] Magic Conch Shell
 > - [x] Game Tic-Tac-Toe
