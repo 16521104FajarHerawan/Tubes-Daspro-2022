@@ -28,7 +28,7 @@ def arraytostrkep(list):
     index=1
     for i in list:
         if index!=length:
-            str+=(i+',')
+            str=str+i+','
         else :
             str+=i
         index+=1
@@ -48,32 +48,15 @@ def save(df_user,df_game,df_kepemilikan,df_riwayat):
     kepemilikan=arraytostr(df_kepemilikan)
     riwayat=arraytostr(df_riwayat)
     with open(f"{namafolder}"+"/user.csv", "w") as file:
-        i=1
         for x in user:
-            if i!=6:
-                file.write(x + "\n")
-            else:
-                file.write(x)
+            file.write(x + "\n")
     with open(f"{namafolder}"+"/game.csv", "w") as file:
-        i=1
         for x in game:
-            if i!=6:
-                file.write(x + "\n")
-            else:
-                file.write(x)
+            file.write(x + "\n")
     with open(f"{namafolder}"+"/kepemilikan.csv", "w") as file:
-        i=1
         for x in kepemilikan:
-            if i!=6:
                 file.write(x + "\n")
-            else:
-                file.write(x)
     with open(f"{namafolder}"+"/riwayat.csv", "w") as file:
-        i=1
         for x in riwayat:
-            if i!=6:
                 file.write(x + "\n")
-            else:
-                file.write(x)
     print(f"Data telah disimpan pada folder {namafolder}!")
-

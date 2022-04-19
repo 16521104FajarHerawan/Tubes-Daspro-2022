@@ -1,6 +1,9 @@
 import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help,tictactoe,os,buy_game,riwayat,kerangajaib
 import search_game_at_store as search
+
+
 clear=lambda:os.system('cls')
+
 def main():
     #Load Database
     df_user,df_game,df_kepemilikan,df_riwayat=load.load()
@@ -77,6 +80,7 @@ def main():
                 stat_game=False
             elif status.upper()=='N':
                 stat_game=False
+
 if __name__=='__main__':
     main()
    
