@@ -16,6 +16,7 @@
 > 7. 4/14/2022 Edit register.py dan list_game_toko.py  
 > 8. 4/16/2022 Edit register.py,main,save,dan load .Selain itu, Menambahkan file search_game_at_store ,search_my_game,topup,chiper.Edit main.Menambahkan help dan list_game.Menambahkan tictactoe
 > 9. 4/18/2022 Edit main.py dan menambahkan riwayat,kerangajaib dan beli_game   
+> 10. 4/19/2022 Edit save.py
 
 > ### Daftar Fungsi
 > - [x] Register
