@@ -43,7 +43,7 @@ def load():
     print("loading...") #loading...
     parser = argparse.ArgumentParser(usage="python program_binomo.py <nama_folder>") 
     parser.add_argument("x") #nama untuk argumen
-
+    stat=True
     if len(sys.argv)==1: #cek apakah folder ada atau tidak 
         print("Tidak ada nama folder yang diberikan!")
         sys.exit(1)
@@ -55,6 +55,9 @@ def load():
         df_riwayat=open(f"{args.x}/riwayat.csv")
         df_kepemilikan=open(f"{args.x}/kepemilikan.csv")
         print("Selamat datang di antarmuka “Binomo”") 
+        return septoarray(df_user.readlines()),septoarray(df_game.readlines()),kepemilikanarray(septoarray(df_kepemilikan.readlines())),septoarray(df_riwayat.readlines()),stat
     else:
+        stat=False
         print(f"Folder “{args.x}” tidak ditemukan.")
-    return septoarray(df_user.readlines()),septoarray(df_game.readlines()),kepemilikanarray(septoarray(df_kepemilikan.readlines())),septoarray(df_riwayat.readlines())
+        return [],[],[],[],stat
+    
