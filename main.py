@@ -1,4 +1,4 @@
-import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help,tictactoe,os,buy_game,riwayat,kerangajaib
+import login,load,register,tambah_game,ubah_stok,list_game_toko,ubah_game,save,search_my_game,topup,list_game,help,tictactoe,os,buy_game,riwayat,kerangajaib,exit
 import search_game_at_store as search
 
 
@@ -74,13 +74,7 @@ def main():
                 kerangajaib.kerangajaib()
             elif command=='exit':
                 clear()
-                print("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n)")
-                status=input()
-                if status.upper()=='Y':
-                    save.save(df_user,df_game,df_kepemilikan,df_riwayat)
-                    stat_game=False
-                elif status.upper()=='N':
-                    stat_game=False
+                stat_game=exit.exit(df_user,df_game,df_kepemilikan,df_riwayat)
 
 if __name__=='__main__':
     main()
