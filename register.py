@@ -11,7 +11,6 @@ def cekusernameall(username,df_user):
     for i in df_user:
         if i[1]==username :
             stat=False
-            break
     return stat
 # dict=df_user.to_dict('list') ---didefinisikan diluar fungsi--- sebagai database user sementara
 def register(df_user): 
