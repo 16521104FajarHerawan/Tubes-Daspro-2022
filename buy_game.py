@@ -19,7 +19,7 @@ def buy_game(df_user,df_game,df_kepemilikan,df_riwayat,user):
     hargagame=0
     nama=''
     for i in df_game[1:]:
-        if i[0]  == gameID and i[5]>0:
+        if i[0]  == gameID and int(i[5])>0:
             hargagame=i[4]
             nama=i[1]
             statada=True
@@ -55,6 +55,8 @@ def buy_game(df_user,df_game,df_kepemilikan,df_riwayat,user):
     elif statada and not(mampu) and tidakpunyaGame:
         print("Saldo anda tidak cukup untuk membeli Game tersebut!")
     elif statada and mampu and not(tidakpunyaGame):
+        print("Anda sudah memiliki Game tersebut!")
+    else:
         print("Anda sudah memiliki Game tersebut!")
     # Kondisi dibawah ini hanya terjadi jika user melakukan save
     return (df_game,df_kepemilikan,df_user,df_riwayat)

@@ -20,6 +20,10 @@ def main():
             elif input_user=='help':
                 clear()
                 help.help('')
+            elif input_user=='exit':
+                clear()
+                stat_init=True
+                stat_game=exit.exit(df_user,df_game,df_kepemilikan,df_riwayat)
 
         #Masuk ke game
         while stat_game: 

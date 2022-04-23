@@ -60,4 +60,3 @@ def load():
         stat=False
         print(f"Folder “{args.x}” tidak ditemukan.")
         return [],[],[],[],stat
-    

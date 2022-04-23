@@ -29,4 +29,5 @@ def help(status):
         print("10. exit - Untuk keluar dari aplikasi")
     elif status=='':
         print("1. login - Untuk login")
+        print("2. exit - Untuk keluar dari aplikasi")
 
