@@ -1,7 +1,6 @@
 import os
 import sys
 import argparse
-
 '''F15:
 PROGRAM LOAD
 { Spesifikasi : Melakukan loading data ke dalam sistem dan 
@@ -9,7 +8,12 @@ otomatis dijalankan ketika sistem mulai pertama kali bila diberikan
 input nama folder yang berisi file penyimpanan. 
  file penyimpanan dalam folder dijamin ada dan memiliki nama yang fixed. 
  Untuk folder, harus melakukan validasi. }'''
-
+def cekarraykosong(array):
+    arraybaru=[]
+    for i in array:
+        if not(i=='' or i=='\n'):
+            arraybaru+=[i]
+    return arraybaru
 #fungsi untuk cek folder ada atau tidak
 def cekfolder(x):
     isdir=os.path.exists(x)
@@ -64,7 +68,7 @@ def load():
         df_riwayat=open(f"{args.x}/riwayat.csv")
         df_kepemilikan=open(f"{args.x}/kepemilikan.csv")
         print("Selamat datang di antarmuka “Binomo”") 
-        return septoarray(df_user.readlines()),septoarray(df_game.readlines()),kepemilikanarray(septoarray(df_kepemilikan.readlines())),septoarray(df_riwayat.readlines()),stat
+        return septoarray(cekarraykosong(df_user.readlines())),septoarray(cekarraykosong(df_game.readlines())),kepemilikanarray(septoarray(cekarraykosong(df_kepemilikan.readlines()))),septoarray(cekarraykosong(df_riwayat.readlines())),stat
     else:
         stat=False
         print(f"Folder “{args.x}” tidak ditemukan.")

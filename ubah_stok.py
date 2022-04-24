@@ -26,7 +26,7 @@ def ubahstok(df):
         if stat==True and stok_awal>int(df[index][5]) and stok_awal>0:
             print(f"Stok game {df[index][1]} berhasil ditambahkan.Stok sekarang: {stok_awal}")
             df[index][5]=str(stok_awal)
-        elif stat==True and stok_awal<int(df[index][5]) and stok_awal>0:
+        elif stat==True and stok_awal<int(df[index][5]) and stok_awal>=0:
             df[index][5]=str(stok_awal)
             print(f"Stok game {df[index][1]} berhasil dikurangi.Stok sekarang: {stok_awal}")
         elif stat==False :
