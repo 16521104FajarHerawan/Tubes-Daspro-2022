@@ -1,3 +1,9 @@
+'''F10:
+PROGRAM SEARCH MY GAME
+{ Spesifikasi : Mendapatkan informasi game sesuai dengan query yang diminta 
+oleh pengguna pada inventory dengan 2 parameter yang bisa dipakai yaitu ID Game dan tahun rilis. 
+Parameter tidak wajib diisi. Jika semua parameter kosong, 
+sistema akan menampilkan semua list game yang dimiliki oleh user tersebut. }'''
 
 def length(array):
     res = 0

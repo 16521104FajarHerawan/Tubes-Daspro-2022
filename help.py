@@ -1,5 +1,8 @@
 # akses: admin n user
-
+'''F14:
+PROGRAM HELP
+{ Spesifikasi : Memberikan panduan tentang penggunaan sistem kepada pengguna 
+dan tidak perlu melakukan login untuk menggunakan menu help ini. }'''
 # sebagai admin
 def help(status):
     if status == "admin":

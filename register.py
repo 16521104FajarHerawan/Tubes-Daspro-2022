@@ -1,4 +1,11 @@
 from chipper import * 
+'''F02: 
+PROGRAM REGISTER
+{ Spesifikasi : Mendaftarkan pengguna baru dengan nama, username, dan password sebagai admin. 
+Pengguna yang mendaftar otomatis memiliki role “user”. 
+Pastikan username unik, tidak dapat membuat user dengan role admin, 
+username hanya dapat mengandung alfabet A-Z, a-z, underscore, strip, dan angka. }'''
+
 def cekusername(username):
     stat=True
     for i in username:

@@ -1,5 +1,18 @@
 import os
 clear = lambda:os.system('cls')
+
+'''B03 
+Permainan tic-tac-toe adalah permainan papan yang dimainkan oleh 2 pemain. 
+Papan permainan ini berukuran 3 x 3. Pemain pertama akan menggunakan simbol “X” 
+dan pemain kedua akan menggunakan simbol “O”. Pemain dapat menandai simbolnya pada kotak kosong 
+secara bergantian. Pemenang adalah pemain pertama yang berhasil membuat simbolnya berurut 3 kali 
+secara vertikal, horizontal, dan diagonal. Permainan dapat dihitung seri apabila kotak sudah penuh 
+dan tidak ada yang berhasil menang. Lakukan validasi terhadap input yang dimasukkan. 
+Apabila input tidak valid, tanyakan sampai input valid.
+
+Cara bermain, pemain “X” dan pemain “O” secara bergiliran bertukar melakukan input yang valid (kotak ada dan tidak terisi oleh simbol apapun)..
+'''
+
 def printpapan(papan):
     for i in papan:
         for j in i:

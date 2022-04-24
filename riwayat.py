@@ -1,3 +1,8 @@
+'''F13:
+PROGRAM RIWAYAT
+{ Spesifikasi : Melihat riwayat pembelian game. 
+Tampilkan pesan khusus jika pengguna tidak memiliki riwayat pembelian game. }'''
+
 def panjang(df):
     len=0
     for i in df:

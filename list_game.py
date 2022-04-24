@@ -1,3 +1,7 @@
+'''F09:
+PROGRAM LIST GAME
+{ Spesifikasi : Memberikan daftar game yang dimiliki pengguna dan 
+akan menampilkan pesan khusus ketika user tidak memiliki game. }'''
 def list_game(df_kepemilikan,df_game,id):
     idgame=[]
     for i in df_kepemilikan[1:]:

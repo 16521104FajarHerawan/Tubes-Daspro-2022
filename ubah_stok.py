@@ -1,3 +1,9 @@
+'''F06:
+PROGRAM UBAH STOK
+{ Spesifikasi : Mengubah stok game pada toko dengan input ID dan besar perubahan stok yang ingin dilakukan. 
+Tidak perlu validasi untuk memastikan stok game setelah pengubahan. 
+Saat stok game nol setelah pengubahan, tidak perlu dihapus dari sistem. }'''
+
 def ubahstok(df):
     id=str(input("Masukkan ID game: "))
     try:

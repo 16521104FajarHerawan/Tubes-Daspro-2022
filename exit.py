@@ -1,4 +1,10 @@
 import save
+
+'''F17:
+PROGRAM EXIT
+{ Spesifikasi : Fungsi untuk keluar dari aplikasi. Fungsi dapat menerima huruf kecil maupun besar, 
+masukkan harus valid. Jika tidak valid, tanyakan kembali pertanyaannya. }'''
+
 def exit(df_user,df_game,df_kepemilikan,df_riwayat):    
     statusawal=True
     while statusawal:

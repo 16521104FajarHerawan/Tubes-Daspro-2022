@@ -1,4 +1,11 @@
 from chipper import decall
+'''F03:
+PROGRAM LOGIN
+{ Spesifikasi : Program menerima input berupa username dan 
+password kemudian akan melakukan pencarian pada database, 
+jika username dan password benar maka akan dilanjutkan ke program. 
+Namun jika salah maka akan diminta untuk melakukan command ulang }'''
+
 def login(list):
     username=input("Masukan username: ")
     password=input("Masukan password: ")

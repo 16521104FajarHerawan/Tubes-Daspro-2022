@@ -1,5 +1,9 @@
 import os
 
+'''F16:
+PROGRAM SAVE
+{ Spesifikasi : Melakukan penyimpanan data ke dalam file setelah dilakukan perubahan. }'''
+
 from matplotlib.pyplot import close
 def panjang(df):
     len=0

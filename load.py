@@ -1,6 +1,15 @@
 import os
 import sys
 import argparse
+
+'''F15:
+PROGRAM LOAD
+{ Spesifikasi : Melakukan loading data ke dalam sistem dan 
+otomatis dijalankan ketika sistem mulai pertama kali bila diberikan 
+input nama folder yang berisi file penyimpanan. 
+ file penyimpanan dalam folder dijamin ada dan memiliki nama yang fixed. 
+ Untuk folder, harus melakukan validasi. }'''
+
 #fungsi untuk cek folder ada atau tidak
 def cekfolder(x):
     isdir=os.path.exists(x)

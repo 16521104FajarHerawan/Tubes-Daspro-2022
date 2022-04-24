@@ -1,3 +1,8 @@
+'''F05:
+PROGRAM UBAH GAME
+{ Spesifikasi : Mengubah data sebuah game berdasarkan input ID. 
+Program melakukan validasi apakah input ID yang diberikan terdapat pada sistem kemudian merubah data 
+berdasarkan input yang diberikan pengguna. }'''
 def ubahGame(df):
     stat=True
     index=0

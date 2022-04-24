@@ -1,3 +1,11 @@
+'''F07:
+PROGRAM LIST GAME TOKO
+{ Spesifikasi : Menyediakan daftar game dengan sorting terhadap game berdasarkan harga 
+dan tahun rilisnya. Pengguna bisa memberi input berupa skema sorting dari 
+daftar game yang ingin dilihat. Skema sorting bisa berdasarkan tahun rilis atau harga 
+(hanya satu kondisi) dengan urutan ascending atau descending. 
+Jika skema sorting kosong, akan disort berdasarkan ascending. }'''
+
 def panjang(df):
     len=0
     for i in df:

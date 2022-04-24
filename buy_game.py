@@ -4,6 +4,12 @@ tahun = time()
 import time
 tahunBeli = time.localtime(tahun).tm_year
 
+'''F08:
+PROGRAM BUY GAME
+{ Spesifikasi : Membeli game dari toko game dengan menerima input berupa gameID 
+dan apabila gameID tersebut sesuai dengan yang terdapat pada dataframe maka akan dilanjutkan,
+ dan akan menampilkan pesan khusus jika user sudah membeli game,
+ sudah memiliki game,tidak punya saldo,atau stok game sedang habis }'''
 
 def panjang(df):
     len = 0

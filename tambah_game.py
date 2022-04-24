@@ -1,3 +1,9 @@
+'''F04:
+PROGRAM TAMBAH GAME
+{ Spesifikasi : Menambah game pada toko game dengan mengisi informasi game yang akan ditambahkan. 
+Program melakukan validasi apakah semua informasi yang dibutuhkan telah diinput oleh pengguna. Jika tidak, 
+program meminta input lagi kepada pengguna hingga pengguna telah melakukan input semua informasi game. }'''
+
 def buatid(lastid):
     num=lastid[0][4:]
     if num=='':
