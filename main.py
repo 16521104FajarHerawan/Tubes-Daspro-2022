@@ -6,12 +6,12 @@ clear=lambda:os.system('cls')
 
 def main():
     #Load Database
-    df_user,df_game,df_kepemilikan,df_riwayat,stat=load.load()
+    df_user,df_game,df_kepemilikan,df_riwayat,status=load.load()
     stat_game=True
     stat_init=False
     #Login Menu 
     # Harus Login agar dapat masuk ke dalam Program
-    if stat==True:
+    if status==True:
         while stat_init==False:
             input_user=input('>>')
             if input_user=="login":
@@ -46,7 +46,7 @@ def main():
                 clear()
                 command_game=input("Skema sorting: ")
                 list_game_toko.list_game_toko(command_game,df_game)
-            elif command == 'search_game_at_store':
+            elif (stat=='user' or stat=='admin') and command == 'search_game_at_store':
                 clear()
                 search.search_game_at_store(df_game)
             elif stat == 'admin' and command == 'topup':
@@ -55,10 +55,10 @@ def main():
             elif stat =='user' and command == 'list_game':
                 clear()
                 list_game.list_game(df_kepemilikan,df_game,user_id)
-            elif command=='save':
+            elif (stat=='user' or stat=='admin') and command=='save':
                 clear()
                 save.save(df_user,df_game,df_kepemilikan,df_riwayat)
-            elif command=='search_my_game':
+            elif stat == 'user' and command=='search_my_game':
                 clear()
                 search_my_game.search_my_game(df_game,df_kepemilikan,user_id)
             elif command=='help':
@@ -70,13 +70,13 @@ def main():
             elif stat=='user' and command == 'riwayat':
                 clear()
                 riwayat.riwayat(df_riwayat,user_id)
-            elif command=='tictactoe':
+            elif (stat=='user' or stat=='admin') and command=='tictactoe':
                 clear()
                 tictactoe.tictactoe()
-            elif command=='kerangajaib':
+            elif (stat=='user' or stat=='admin') and command=='kerangajaib':
                 clear()
                 kerangajaib.kerangajaib()
-            elif command=='exit':
+            elif (stat=='user' or stat=='admin') and command=='exit':
                 clear()
                 stat_game=exit.exit(df_user,df_game,df_kepemilikan,df_riwayat)
 
