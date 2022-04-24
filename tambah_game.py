@@ -42,5 +42,4 @@ def tambahgame(df_game,df_kepemilikan):
     df_game+=[[newid,nama,kategori,tahun_rilis,harga,stok_awal]]
     df_kepemilikan+=[[newid,[]]]
     return df_game,df_kepemilikan
-df_game=[['id','nama','kategori','tahun_rilis','harga','stok']]
-df_kepemilikan=[['gameid','userid'],['GAME001',[]]]
+

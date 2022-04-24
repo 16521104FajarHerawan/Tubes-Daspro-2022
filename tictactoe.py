@@ -15,6 +15,13 @@ def kotakterisi(papan,x,y):
         return True
     else:
         return False
+def cekpapan(papan):
+    stat=True
+    for i in range(3):
+        for j in range(3):
+            if papan[i][j]=="#":
+                stat=False
+    return stat
 def cekmenang(papan):
     status=False
     #horizontal
@@ -77,6 +84,10 @@ def tictactoe():
                     print("Pemain 'x' menang ")
                     stat=False
                     valid=False
+                elif cekpapan(papan):
+                    print("Pemain x dan Pemain y seri")
+                    stat=False
+                    valid=False
             order+=1
         elif order%2 ==0:
             valid=True
@@ -97,6 +108,10 @@ def tictactoe():
                     print("Input tidak valid")
                 if cekmenang(papan):
                     print("Pemain 'O' menang ")
+                    stat=False
+                    valid=False
+                elif cekpapan(papan):
+                    print("Pemain x dan Pemain y seri")
                     stat=False
                     valid=False
             order+=1

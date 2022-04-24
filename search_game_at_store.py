@@ -36,3 +36,5 @@ def search_game_at_store(df):
         if (status):
             count += 1
             print(f"{count}. {df[i][0]} | {df[i][1]} | {df[i][4]} | {df[i][2]} | {df[i][3]} | {df[i][5]}")
+    if count==0:
+        print("Tidak ada game pada toko yang memenuhi kriteria")

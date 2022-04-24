@@ -1,7 +1,11 @@
 import save
 def exit(df_user,df_game,df_kepemilikan,df_riwayat):    
-    print("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n)")
-    status=input()
+    statusawal=True
+    while statusawal:
+        print("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n)")
+        status=input()
+        if status.upper()=="Y" or status.upper()=="N":
+            statusawal=False
     stat_game=True
     if status.upper()=='Y':
         save.save(df_user,df_game,df_kepemilikan,df_riwayat)

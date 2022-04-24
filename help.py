@@ -15,6 +15,8 @@ def help(status):
         print("9. help - Untuk memberikan panduan penggunaan sistem")
         print("10. save - Untuk melakukan penyimpanan data ke dalam file")
         print("11. exit - Untuk keluar dari aplikasi")
+        print("12. kerangajaib - untuk menanyakan pertanyaan")
+        print("13. tictactoe - game tictactoe")        
     elif status == "user":
         print("============ HELP ============")
         print("1. login - Untuk login")
@@ -27,6 +29,8 @@ def help(status):
         print("8. help - Untuk memberikan panduan penggunaan sistem")
         print("9. save - Untuk melakukan penyimpanan data ke dalam file")
         print("10. exit - Untuk keluar dari aplikasi")
+        print("11. kerangajaib - untuk menanyakan pertanyaan")
+        print("12. tictactoe - game tictactoe")
     elif status=='':
         print("1. login - Untuk login")
         print("2. exit - Untuk keluar dari aplikasi")
