@@ -36,7 +36,6 @@ def list_game_toko(command,df):
         for n in range(N-1, 1, -1):
             for i in range(1,n):
                 if (int(df[i][4])) > (int(df[i + 1][4])):
-                    print("True")
                     df[i], df[i + 1] = df[i + 1], df[i]
         outputtabel(df)
     elif command=="harga-":
@@ -48,7 +47,7 @@ def list_game_toko(command,df):
     elif command=='':
         for n in range(N-1, 1, -1):
             for i in range(1,n):
-                if (int(df[i][0])) > (int(df[i + 1][0])):
+                if (int(df[i][0][4:])) > (int(df[i + 1][0][4:])):
                     df[i], df[i + 1] = df[i + 1], df[i]
         outputtabel(df)
     else:

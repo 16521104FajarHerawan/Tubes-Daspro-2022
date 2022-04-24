@@ -46,8 +46,15 @@ def topup(df):
             if (totalSaldo + saldo < 0):
                 print("Masukan tidak valid.")
             else:
-                totalSaldo += saldo
-                df[index][5] = str(totalSaldo)
-                nama = df[index][2]
-                print(f"Top up berhasil. Saldo {nama} bertambah menjadi {str(totalSaldo)}.")
+                if saldo>0:
+                    totalSaldo += saldo
+                    df[index][5] = str(totalSaldo)
+                    nama = df[index][2]
+                    print(f"Top up berhasil. Saldo {nama} bertambah menjadi {str(totalSaldo)}.")
+                else:
+                    totalSaldo += saldo
+                    df[index][5] = str(totalSaldo)
+                    nama = df[index][2]
+                    print(f"Top up berhasil. Saldo {nama} berkurang menjadi {str(totalSaldo)}.")
+
     return df
